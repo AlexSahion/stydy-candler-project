@@ -1,0 +1,495 @@
+//PAGE//
+.page {
+  // .page__main
+  &__main {
+    padding-top: 142px;
+    position: relative;
+  
+  }
+}
+
+
+
+//MAIN-PAGE//
+.main {
+  // .main__container
+  &__container {
+    display: flex;
+  }
+  // .main__content
+  &__content {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    & > *:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+  // .main__title
+  &__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  // .main__text
+  &__text {}
+  // .main__button
+  &__button {
+    margin-top:33px;
+  }
+  // .main__images
+  &__images {
+    position: relative;
+    margin-left: 87px;
+  }
+  // .main__img
+  &__img {
+    margin-top: -100px;
+    width: 23vw;
+    border-radius: 439.735px;
+    position: relative;
+    img{
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      height: auto;
+    } 
+    
+    
+  }
+  // .main__img-bg
+  &__img-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+}
+._1{
+  top: 10.714vw;
+  right: -18.571vw;
+  width: 20.000vw;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+._2{
+  top: -3.571vw;
+  right: -22.857vw;
+  width: 17.143vw;
+  height: 259px;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+._3{
+  top: -9.286vw;
+  right: -12.143vw;
+  width: 17.143vw;
+  height: 259px;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+._4{
+  top: 14.286vw;
+  right: -37.571vw;
+  width: 17.143vw;
+  height: 259px;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+._5{
+  top: 14.286vw;
+  left: -12.857vw;
+  width: 17.143vw;
+  height: 259px;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.main__elip-1{
+      top: 7.143vw;
+      left: 35.714vw;
+      position: absolute;
+      width: 39.949vw;
+      height: 25.270vw;
+      img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+}
+.main__elip-2{
+  top: 3.143vw;
+  left: 43.714vw;
+  position: absolute;
+  width: 25.949vw;
+  height: 15.270vw;
+  img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
+
+
+//ABOUT//
+
+.page {
+  // .page__about
+  &__about {
+    background-color: #A5978E;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 130px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    @media(max-width:796px){
+      padding-bottom: 90px;
+    }
+    @media(max-width:480px){
+      padding-bottom: 40px;
+    }
+  }
+}
+.about {
+  // .about__container
+  &__container {
+    flex: 0 0 30%;
+    margin: 0 auto;
+    padding-right: 0;
+    @media(max-width:585px){
+      flex: 0 0 45%;
+    }
+    @media(max-width:459px){
+      flex: 0 0 70%;
+    }
+  }
+  // .about__content
+  &__content {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  // .about__title
+  &__title {
+    color: #FAFAFA;
+    font-family: Yeseva One;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media(max-width:768px){
+      font-size: 15px;
+    }
+  }
+  // .about__text
+  &__text {
+    color: #FAFAFA;
+    line-height: normal;
+    @media(max-width:768px){
+      font-size: 10px;
+    }
+  }
+  // .about__images
+  &__images {
+    position: relative;
+    padding-bottom: 51px;
+    &::after{
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #7B6152;
+    }
+    @media(max-width:508px){
+      padding-bottom: 31px;
+    }
+    
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: -24px;
+      width: 24px;
+      height: 30px;
+      background: url('../../img/about/cake.svg');
+    }
+  }
+  // .about__images-item
+  &__images-item {
+    @media(max-width:480px){
+      :last-child{
+        display: none;
+      }
+    }
+    display: flex;
+    gap: 19px;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+
+.item-images {
+  // .item-images__img
+  &__img {
+    max-width: 215px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  // .item-images__text
+  &__text {
+    color: #FAFAFA;
+    font-family: Comfortaa;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;}
+}
+._border-img{
+  max-width: 350px;
+  @media(max-width:585px){
+    display: none;
+  }
+  img{
+    border-radius: 200px 200px 0px 0px;
+  }
+  
+}
+
+
+
+//PRODUCT==============================================================================
+
+.page {
+  // .page__product
+  &__product {
+    padding-top: 150px;
+    padding-bottom: 70px;
+    @media(max-width:480px){
+      padding-top: 50px;
+    }
+  }
+}
+.product {
+  &__line{
+    display: inline-flex;
+    width: 100%;
+    &::after{
+      content: '';
+      min-width: 90%;
+      height: 1px;
+      background-color: #7B6152;
+      bottom: 0;
+      left: 0;
+    }
+    &::before{
+      content: '';
+      background: url('../../img/about/cake.svg');
+      min-width: 24px;
+      height: 33px;
+      bottom: 0;
+      left: 0;
+      transform: translate(0, -45%);
+    }
+    
+  }
+  // .product__container
+  &__container {
+    display: flex;
+    @media(max-width:480px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // .product__content
+  &__content {
+    flex: 1 0 30%;
+    @media(max-width:480px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+  }
+  // .product__title
+  &__title {
+    margin-bottom: 15px;
+    @media(max-width:768px){
+      font-size: 15px;
+    }
+  }
+  // .product__text
+  &__text {
+    @media(max-width:768px){
+      font-size: 10px;
+    }
+  }
+  // .product__items
+  &__items {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+    @media(max-width:768px){
+      row-gap: 30px;
+    }
+  }
+}
+
+.items-product {
+  // .items-product__item
+  &__item {
+    padding: 0 48px;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media(max-width:1000px){
+      padding: 0 15px 0 10px;
+    }
+  }
+  // .items-product__img
+  &__img {
+    margin-bottom: 10px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  // .items-product__price
+  &__price {
+    margin-bottom: 10px;
+  }
+  // .items-product__title
+  &__title {
+    margin-bottom: 12px;
+    font-size: 16px;
+    @media(max-width:768px){
+      font-size: 12px;
+    }
+    @media(max-width:350px){
+      text-align: center;
+    }
+  }
+  // .items-product__text
+  &__text {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 27px;
+    font-size: 14px;
+    @media(max-width:768px){
+      font-size: 8px;
+    }
+  }
+  // .items-product__button
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #272727;
+    background-color: #FFBD59;
+    min-height: 42px;
+    padding: 0 54px;
+    font-family: Comfortaa;
+    font-weight: 600;
+    @media(max-width:768px){
+      font-size: 12px;
+      padding: 0 30px;
+      min-height: 30px;
+    }
+  }
+}
+
+
+//STAGES=========================================================================================
+
+.page {
+  // .page__stages
+  &__stages {
+
+  }
+}
+.stages {
+  // .stages__container
+  &__container {
+    display: flex;
+  }
+  // .stages__content
+  &__content {
+    flex: 0 1 500px;
+  }
+  // .stages__title
+  &__title {}
+  // .stages__text
+  &__text {}
+  // .stages__items
+  &__items {
+    display: flex;
+    margin-left: 20px;
+  }
+  // .stages__img
+
+}
+.title {
+}
+.text {
+}
+.items-stages {
+  // .items-stages__column
+  &__column {
+    display: flex;
+    flex: 0 1 50%;
+  }
+  // .items-stages__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 20%;
+  }
+  // .items-stages__text
+  &__text {}
+  // .items-stages__number
+  &__number {
+    color: #BEA495;
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  &__img {
+    margin-left: 38px;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+%ic{
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"]{
+  &:before{
+    @extend %ic;
+    display: block;
+  }
+}
+
+._icon-arrow:before {
+  content: "\e900";
+}
+._icon-facebook-footer:before {
+  content: "\e901";
+}
+._icon-in-footer:before {
+  content: "\e902";
+}
+._icon-inst-main:before {
+  content: "\e903";
+}
+._icon-instagram-footer:before {
+  content: "\e904";
+}
+._icon-tel-header:before {
+  content: "\e905";
+  color: #bea495;
+}
+._icon-youtube-footer:before {
+  content: "\e906";
+}

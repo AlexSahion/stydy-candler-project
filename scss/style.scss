@@ -1,0 +1,77 @@
+
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One:regular');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:regular,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:regular');
+@import "config/fonts";
+@import "config/icons";
+@import "config/functions";
+@import "config/vars";
+@import "config/reset";
+@import "config/base";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+
+
+
+.popup {
+  font-family: Comfortaa;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.751);
+  color: #000;
+  transition: 0.8s;
+  overflow: auto;
+  &.open{
+    visibility: visible;
+    opacity: 1;
+  }
+  //.popup__body
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    
+  }
+  // .popup__content
+  &__content {
+    background-color: #FFF8F3;
+    max-width: 700px;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 10px #000;
+  }
+  // .popup__title
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  // .popup__text
+  &__text {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  // .popup__close
+  &__close {
+    color: #000;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+.popup-close {
+}
+
+

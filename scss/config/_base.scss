@@ -1,0 +1,50 @@
+body{
+    font-family: $fontFamily;
+    position: relative;
+    color: $mainColor;
+    background-color: #FFF8F3;
+    &.lock{
+        overflow: hidden;
+    }
+}
+[class*="__container"]{
+    max-width: $containerWidth + $mainOffset*2;
+    padding: 0 $mainOffset;
+    margin: 0 auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+.title{
+    font-size: 40px;
+}
+.text{
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #272727;
+    background-color: #FFBD59;
+    height: 55px;
+    padding: 0 54px;
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    transition: $defaultTrans;
+    @media(any-hover: hover){
+        &:hover{
+            background-color: #cb9646;
+        }
+    }
+}
+
+
