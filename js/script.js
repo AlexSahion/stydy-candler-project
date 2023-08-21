@@ -87,12 +87,19 @@ function bodyLock() {
 function bodyUnlock() {
   setTimeout(() => {
     body.style.paddingRight = '0px'
-    body.classList.remove('lock')
+    if(!document.querySelector('.menu._active')){
+      body.classList.remove('lock')
+    }
   }, timeout);
 
   unlock = false
   setTimeout(() => {
     unlock = true
   }, timeout);
+}
+if (!document.querySelector('.menu._active')) {
+  console.log(1);
+}else{
+  console.log(false);
 }
 
