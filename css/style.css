@@ -150,12 +150,22 @@ body.lock {
 .title {
   font-size: 40px;
 }
+@media (max-width: 768px) {
+  .title {
+    font-size: 15px;
+  }
+}
 
 .text {
   font-family: Comfortaa;
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 10px;
+  }
 }
 
 .btn {
@@ -664,16 +674,6 @@ body.lock {
 .product__title {
   margin-bottom: 15px;
 }
-@media (max-width: 768px) {
-  .product__title {
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-  .product__text {
-    font-size: 10px;
-  }
-}
 .product__items {
   position: relative;
   display: flex;
@@ -757,17 +757,66 @@ body.lock {
 .stages__container {
   display: flex;
 }
+@media (max-width: 480px) {
+  .stages__container {
+    flex-direction: column;
+  }
+}
 .stages__content {
-  flex: 0 1 500px;
+  flex: 1 0 30%;
+}
+@media (max-width: 480px) {
+  .stages__content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.stages__title {
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .stages__title {
+    margin-bottom: 10px;
+  }
 }
 .stages__items {
   display: flex;
   margin-left: 20px;
 }
+@media (max-width: 480px) {
+  .stages__items {
+    margin-left: 0px;
+  }
+}
 
+.items-stages {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+@media (max-width: 1000px) {
+  .items-stages {
+    row-gap: 37px;
+  }
+}
+@media (max-width: 768px) {
+  .items-stages {
+    row-gap: 25px;
+  }
+}
 .items-stages__column {
   display: flex;
-  flex: 0 1 50%;
+  flex: 0 1 47%;
+  justify-content: space-between;
+}
+.items-stages__column_left {
+  flex-direction: row-reverse;
+}
+.items-stages__column_left .items-stages__img {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 15px;
 }
 .items-stages__content {
   display: flex;
@@ -775,14 +824,34 @@ body.lock {
   justify-content: space-between;
   flex: 0 1 20%;
 }
+@media (max-width: 768px) {
+  .items-stages__text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 360px) {
+  .items-stages__text {
+    font-size: 6px;
+  }
+}
 .items-stages__number {
   color: #BEA495;
   font-family: Yeseva One;
   font-size: 30px;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .items-stages__number {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .items-stages__number {
+    font-size: 12px;
+  }
+}
 .items-stages__img {
-  margin-left: 38px;
+  padding-left: 15px;
 }
 .items-stages__img img {
   max-width: 100%;
