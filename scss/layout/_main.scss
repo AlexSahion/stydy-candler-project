@@ -340,15 +340,11 @@
   // .product__title
   &__title {
     margin-bottom: 15px;
-    @media(max-width:768px){
-      font-size: 15px;
-    }
+    
   }
   // .product__text
   &__text {
-    @media(max-width:768px){
-      font-size: 10px;
-    }
+    
   }
   // .product__items
   &__items {
@@ -441,19 +437,34 @@
   // .stages__container
   &__container {
     display: flex;
+    @media(max-width:480px){
+      flex-direction: column;
+    }
   }
   // .stages__content
   &__content {
-    flex: 0 1 500px;
+    flex: 1 0 30%;
+    @media(max-width:480px){
+      text-align: center;
+      margin-bottom: 30px;
+    }
   }
   // .stages__title
-  &__title {}
+  &__title {
+    margin-bottom: 15px;
+    @media(max-width:480px){
+      margin-bottom: 10px;
+    }
+  }
   // .stages__text
   &__text {}
   // .stages__items
   &__items {
     display: flex;
     margin-left: 20px;
+    @media(max-width:480px){
+      margin-left: 0px;
+    }
   }
   // .stages__img
 
@@ -463,10 +474,30 @@
 .text {
 }
 .items-stages {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 70px;
+  @media(max-width:1000px){
+    row-gap: 37px;
+  }
+  @media(max-width:768px){
+    row-gap: 25px;
+  }
+
   // .items-stages__column
   &__column {
     display: flex;
-    flex: 0 1 50%;
+    flex: 0 1 47%;
+    justify-content: space-between;
+    &_left{
+      flex-direction: row-reverse;
+      .items-stages__img{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 15px;
+      }
+    }
   }
   // .items-stages__content
   &__content {
@@ -476,16 +507,29 @@
     flex: 0 1 20%;
   }
   // .items-stages__text
-  &__text {}
+  &__text {
+    @media(max-width:768px){
+      font-size: 8px;
+    }
+    @media(max-width:360px){
+      font-size: 6px;
+    }
+  }
   // .items-stages__number
   &__number {
     color: #BEA495;
     font-family: Yeseva One;
     font-size: 30px;
     font-weight: 400;
+    @media(max-width:768px){
+      font-size: 20px;
+    }
+    @media(max-width:360px){
+      font-size: 12px;
+    }
   }
   &__img {
-    margin-left: 38px;
+    padding-left: 15px;
     img{
       max-width: 100%;
       height: auto;
