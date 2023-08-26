@@ -462,6 +462,15 @@
   &__items {
     display: flex;
     margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 70px;
+    @media(max-width:1000px){
+      row-gap: 37px;
+    }
+    @media(max-width:768px){
+      row-gap: 25px;
+    }
     @media(max-width:480px){
       margin-left: 0px;
     }
@@ -474,16 +483,7 @@
 .text {
 }
 .items-stages {
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 70px;
-  @media(max-width:1000px){
-    row-gap: 37px;
-  }
-  @media(max-width:768px){
-    row-gap: 25px;
-  }
+  
 
   // .items-stages__column
   &__column {

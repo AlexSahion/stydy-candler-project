@@ -782,6 +782,19 @@ body.lock {
 .stages__items {
   display: flex;
   margin-left: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 70px;
+}
+@media (max-width: 1000px) {
+  .stages__items {
+    row-gap: 37px;
+  }
+}
+@media (max-width: 768px) {
+  .stages__items {
+    row-gap: 25px;
+  }
 }
 @media (max-width: 480px) {
   .stages__items {
@@ -789,22 +802,6 @@ body.lock {
   }
 }
 
-.items-stages {
-  position: relative;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 70px;
-}
-@media (max-width: 1000px) {
-  .items-stages {
-    row-gap: 37px;
-  }
-}
-@media (max-width: 768px) {
-  .items-stages {
-    row-gap: 25px;
-  }
-}
 .items-stages__column {
   display: flex;
   flex: 0 1 47%;
