@@ -20,12 +20,18 @@ body{
 }
 .title{
     font-size: 40px;
+    @media(max-width:768px){
+        font-size: 15px;
+    }
 }
 .text{
     font-family: Comfortaa;
     font-size: 14px;
     font-weight: 400;
     line-height: normal;
+    @media(max-width:768px){
+        font-size: 10px;
+    }
 }
 .btn{
     display: inline-flex;
